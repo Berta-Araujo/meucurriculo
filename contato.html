@@ -8,6 +8,7 @@
   <meta name="keywords" content="">
   <!-- Favicons -->
   <link href="assets/img/balloon-heart.svg" rel="icon">
+  <link href="assets/img/balloon-heart.svg" rel="icon">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -19,10 +20,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <!-- Ajustes do mapa e botão -->
+  <!-- Ajustes somente do mapa e botão -->
   <style>
-    /* MAPA */
-    .contact .info-wrap iframe {
+    .mapa {
       width: 100%;
       height: 300px;
       border: 0;
@@ -30,13 +30,13 @@
       margin-top: 20px;
       display: block;
     }
-    /* BOTÃO ENVIAR */
     #contact-form button[type="submit"] {
-      display: inline-block;
-      padding: 13px 30px;
-      border: 0;
+      display: block;
+      margin: 15px auto 0;
+      padding: 12px 30px;
+      border: none;
       border-radius: 30px;
-      background: #000;
+      background-color: #000;
       color: #fff;
       font-size: 16px;
       font-weight: 500;
@@ -46,11 +46,6 @@
     #contact-form button[type="submit"]:hover {
       transform: translateY(-2px);
       opacity: 0.85;
-    }
-    /* Centraliza o botão */
-    .contact .form-submit {
-      text-align: center;
-      margin-top: 10px;
     }
   </style>
 </head>
@@ -100,7 +95,7 @@
               <h3>Endereço</h3>
               <p>
                 Rua Saburo Suda, 40.<br>
-                Jd Morada do Sol, Pirapozinho - SP
+                Jd Morada do Sol, Pirapozinho-SP
               </p>
             </div>
           </div>
@@ -125,6 +120,7 @@
           <!-- End Info Item -->
           <!-- MAPA -->
           <iframe
+            class="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.27435428312!2d-51.49577968945268!3d-22.267594879625467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94938dc01707d107%3A0xa402a376b8ba6fe6!2sR.%20Saburo%20Suda%2C%2040%2C%20Pirapozinho%20-%20SP%2C%2019200-000!5e0!3m2!1spt-BR!2sbr!4v1772817984452!5m2!1spt-BR!2sbr"
             allowfullscreen=""
             loading="lazy"
@@ -132,63 +128,54 @@
           </iframe>
         </div>
       </div>
-      <!-- End Contact Information -->
       <!-- FORMULÁRIO -->
       <div class="col-lg-7">
         <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-4">
             <!-- Nome -->
             <div class="col-md-6">
-              <label for="name-field" class="pb-2">
-                Seu Nome
-              </label>
+              <label for="name-field" class="pb-2">Seu Nome</label>
               <input
                 type="text"
                 name="name"
                 id="name-field"
                 class="form-control"
-                required>
+                required="">
             </div>
             <!-- Email -->
             <div class="col-md-6">
-              <label for="email-field" class="pb-2">
-                Seu Email
-              </label>
+              <label for="email-field" class="pb-2">Seu Email</label>
               <input
                 type="email"
                 class="form-control"
                 name="email"
                 id="email-field"
-                required>
+                required="">
             </div>
             <!-- Assunto -->
             <div class="col-md-12">
-              <label for="subject-field" class="pb-2">
-                Assunto
-              </label>
+              <label for="subject-field" class="pb-2">Assunto</label>
               <input
                 type="text"
                 class="form-control"
                 name="subject"
                 id="subject-field"
-                required>
+                required="">
             </div>
             <!-- Mensagem -->
             <div class="col-md-12">
-              <label for="message-field" class="pb-2">
-                Mensagem
-              </label>
+              <label for="message-field" class="pb-2">Mensagem</label>
               <textarea
                 class="form-control"
                 name="message"
                 rows="10"
                 id="message-field"
-                required></textarea>
+                required=""></textarea>
             </div>
-            <!-- BOTÃO -->
-            <div class="col-md-12 form-submit">
+            <!-- Botão -->
+            <div class="col-md-12">
               <button type="submit">
-                <i class="bi bi-whatsapp me-2"></i>
+                <i class="bi bi-whatsapp"></i>
                 Enviar Mensagem
               </button>
             </div>
@@ -206,14 +193,9 @@
 <div class="container">
   <div class="copyright text-center">
     <p>
-      ©️
-      <span>Copyright</span>
-      <strong class="px-1 sitename">
-        Berta Araujo
-      </strong>
-      <span>
-        Todos os direitos reservados.<br>
-      </span>
+      ©️ <span>Copyright</span>
+      <strong class="px-1 sitename">Berta Araujo</strong>
+      <span>Todos os direitos reservados.<br></span>
     </p>
   </div>
   <div class="social-links d-flex justify-content-center">
@@ -242,30 +224,23 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <!-- ENVIO PARA WHATSAPP -->
   <script>
-    document
-      .getElementById("contact-form")
-      .addEventListener("submit", function(e) {
-        e.preventDefault();
-        const nome =
-          document.getElementById("name-field").value;
-        const email =
-          document.getElementById("email-field").value;
-        const assunto =
-          document.getElementById("subject-field").value;
-        const mensagem =
-          document.getElementById("message-field").value;
-        const texto =
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nome = document.getElementById("name-field").value;
+      const email = document.getElementById("email-field").value;
+      const assunto = document.getElementById("subject-field").value;
+      const mensagem = document.getElementById("message-field").value;
+      const texto =
 `Olá, Berta!
 Meu nome é ${nome}
 E-mail: ${email}
 Assunto: ${assunto}
 Mensagem:
 ${mensagem}`;
-        const numero = "5518997455145";
-        const url =
-          `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-        window.open(url, "_blank");
-      });
+      const numero = "5518997455145";
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+      window.open(url, "_blank");
+    });
   </script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
