@@ -1,675 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>O Balonista</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="icones/balloon.svg" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contato - Berta Araujo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- Favicons -->
+  <link href="assets/img/balloon-heart.svg" rel="icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Ajustes do mapa e botão -->
+  <style>
+    /* MAPA */
+    .contact .info-wrap iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 15px;
+      margin-top: 20px;
+      display: block;
+    }
+    /* BOTÃO ENVIAR */
+    #contact-form button[type="submit"] {
+      display: inline-block;
+      padding: 13px 30px;
+      border: 0;
+      border-radius: 30px;
+      background: #000;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    #contact-form button[type="submit"]:hover {
+      transform: translateY(-2px);
+      opacity: 0.85;
+    }
+    /* Centraliza o botão */
+    .contact .form-submit {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
 </head>
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="portfolio.html">Portfólio</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="contato.html">Contato</a>
-                    </li>
-                </ul>
+<body class="contact-page">
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+<div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+  <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+    <h1 class="sitename">Berta Araujo</h1>
+  </a>
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobremim.html">Sobre Mim</a></li>
+      <li><a href="estudos.html">Estudos e Experiências Profissionais</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+  </nav>
+  <div class="header-social-links">
+    <a href="https://github.com/Berta-Araujo" class="github">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/bertaaraujo" class="linkedin">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
+</div>
+  </header>
+  <main class="main">
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contato</h2>
+    <p>Abaixo meus contatos principais</p>
+  </div>
+  <!-- End Section Title -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <!-- INFORMAÇÕES DE CONTATO -->
+      <div class="col-lg-5">
+        <div class="info-wrap">
+          <!-- Endereço -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Endereço</h3>
+              <p>
+                Rua Saburo Suda, 40.<br>
+                Jd Morada do Sol, Pirapozinho - SP
+              </p>
             </div>
+          </div>
+          <!-- End Info Item -->
+          <!-- Telefone -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Telefone</h3>
+              <p>+55 (18) 99745-5145</p>
+            </div>
+          </div>
+          <!-- End Info Item -->
+          <!-- Email -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email</h3>
+              <p>berta_araujo@live.com</p>
+            </div>
+          </div>
+          <!-- End Info Item -->
+          <!-- MAPA -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.27435428312!2d-51.49577968945268!3d-22.267594879625467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94938dc01707d107%3A0xa402a376b8ba6fe6!2sR.%20Saburo%20Suda%2C%2040%2C%20Pirapozinho%20-%20SP%2C%2019200-000!5e0!3m2!1spt-BR!2sbr!4v1772817984452!5m2!1spt-BR!2sbr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Logo -->
-            <img src="logo/Artboard 1_3.png" alt="O Balonista" class="logo">
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+      </div>
+      <!-- End Contact Information -->
+      <!-- FORMULÁRIO -->
+      <div class="col-lg-7">
+        <form id="contact-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+            <!-- Nome -->
+            <div class="col-md-6">
+              <label for="name-field" class="pb-2">
+                Seu Nome
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name-field"
+                class="form-control"
+                required>
             </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">
-                Graphic Artist - Web Designer - Illustrator
-            </p>
-        </div>
-    </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                Portfolio
-            </h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+            <!-- Email -->
+            <div class="col-md-6">
+              <label for="email-field" class="pb-2">
+                Seu Email
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email-field"
+                required>
             </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                    </div>
-                </div>
+            <!-- Assunto -->
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2">
+                Assunto
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject-field"
+                required>
             </div>
-        </div>
-    </section>
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
-        <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">
-                About
-            </h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+            <!-- Mensagem -->
+            <div class="col-md-12">
+              <label for="message-field" class="pb-2">
+                Mensagem
+              </label>
+              <textarea
+                class="form-control"
+                name="message"
+                rows="10"
+                id="message-field"
+                required></textarea>
             </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">
-                        Freelancer is a free bootstrap theme created by Start Bootstrap.
-                        The download includes the complete source files including HTML,
-                        CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-                    </p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">
-                        You can create your own custom avatar for the masthead,
-                        change the icon in the dividers, and add your email address
-                        to the contact form to make it fully functional!
-                    </p>
-                </div>
+            <!-- BOTÃO -->
+            <div class="col-md-12 form-submit">
+              <button type="submit">
+                <i class="bi bi-whatsapp me-2"></i>
+                Enviar Mensagem
+              </button>
             </div>
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                    <i class="fas fa-download me-2"></i>
-                    Free Download!
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                Contact Me
-            </h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Contact Section Form-->
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control"
-                                id="name"
-                                type="text"
-                                placeholder="Enter your name..."
-                                data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">
-                                A name is required.
-                            </div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control"
-                                id="email"
-                                type="email"
-                                placeholder="name@example.com"
-                                data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">
-                                An email is required.
-                            </div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">
-                                Email is not valid.
-                            </div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control"
-                                id="phone"
-                                type="tel"
-                                placeholder="(123) 456-7890"
-                                data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">
-                                A phone number is required.
-                            </div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control"
-                                id="message"
-                                type="text"
-                                placeholder="Enter your message here..."
-                                style="height: 10rem"
-                                data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">
-                                A message is required.
-                            </div>
-                        </div>
-                        <!-- Submit success message-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">
-                                    https://startbootstrap.com/solution/contact-forms
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">
-                                Error sending message!
-                            </div>
-                        </div>
-                        <!-- Submit Button -->
-                        <div class="text-center mt-4">
-                            <button
-                                class="btn btn-primary btn-xl"
-                                id="submitButton"
-                                type="submit"
-                                style="
-                                    border-radius: 50px;
-                                    padding: 14px 38px;
-                                    font-weight: 600;
-                                    font-size: 1.1rem;
-                                    border: none;
-                                    transition: all 0.3s ease;
-                                ">
-                                <i class="fas fa-paper-plane me-2"></i>
-                                Enviar mensagem
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Onde estamos</h4>
-                    <p class="lead mb-3">
-                        Rua Saburo Suda, 40
-                        <br />
-                        Jardim Morada do Sol
-                        <br />
-                        Pirapozinho - SP
-                    </p>
-                    <!-- Google Maps -->
-                    <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm">
-                        <iframe
-                            src="https://www.google.com/maps?q=Rua+Saburo+Suda,+40,+Jardim+Morada+do+Sol,+Pirapozinho+-+SP&output=embed"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!">
-                        <i class="fab fa-fw fa-facebook-f"></i>
-                    </a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!">
-                        <i class="fab fa-fw fa-twitter"></i>
-                    </a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!">
-                        <i class="fab fa-fw fa-linkedin-in"></i>
-                    </a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!">
-                        <i class="fab fa-fw fa-dribbble"></i>
-                    </a>
-                </div>
-                <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                    <p class="lead mb-0">
-                        Freelance is a free to use, MIT licensed Bootstrap theme created by
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                        .
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container">
-            <small>Copyright &copy; Your Website 2023</small>
-        </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Contact Form -->
     </div>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade"
-        id="portfolioModal1"
-        tabindex="-1"
-        aria-labelledby="portfolioModal1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button class="btn-close"
-                        type="button"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
-                                    Log Cabin
-                                </h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/cabin.png"
-                                    alt="..." />
-                                <p class="mb-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                                    recusandae quos quis inventore quisquam velit asperiores,
-                                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                    Nam.
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade"
-        id="portfolioModal2"
-        tabindex="-1"
-        aria-labelledby="portfolioModal2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button class="btn-close"
-                        type="button"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
-                                    Tasty Cake
-                                </h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/cake.png"
-                                    alt="..." />
-                                <p class="mb-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                                    recusandae quos quis inventore quisquam velit asperiores,
-                                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                    Nam.
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade"
-        id="portfolioModal3"
-        tabindex="-1"
-        aria-labelledby="portfolioModal3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button class="btn-close"
-                        type="button"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
-                                    Circus Tent
-                                </h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/circus.png"
-                                    alt="..." />
-                                <p class="mb-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                                    recusandae quos quis inventore quisquam velit asperiores,
-                                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                    Nam.
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade"
-        id="portfolioModal4"
-        tabindex="-1"
-        aria-labelledby="portfolioModal4"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button class="btn-close"
-                        type="button"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
-                                    Controller
-                                </h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/game.png"
-                                    alt="..." />
-                                <p class="mb-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                                    recusandae quos quis inventore quisquam velit asperiores,
-                                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                    Nam.
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade"
-        id="portfolioModal5"
-        tabindex="-1"
-        aria-labelledby="portfolioModal5"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button class="btn-close"
-                        type="button"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
-                                    Locked Safe
-                                </h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/safe.png"
-                                    alt="..." />
-                                <p class="mb-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                                    recusandae quos quis inventore quisquam velit asperiores,
-                                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                    Nam.
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade"
-        id="portfolioModal6"
-        tabindex="-1"
-        aria-labelledby="portfolioModal6"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button class="btn-close"
-                        type="button"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
-                    </button>
-                </div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
-                                    Submarine
-                                </h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <img class="img-fluid rounded mb-5"
-                                    src="assets/img/portfolio/submarine.png"
-                                    alt="..." />
-                                <p class="mb-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Mollitia neque assumenda ipsam nihil, molestias magnam,
-                                    recusandae quos quis inventore quisquam velit asperiores,
-                                    vitae? Reprehenderit soluta, eos quod consequuntur itaque.
-                                    Nam.
-                                </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- SB Forms JS-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </div>
+</section>
+<!-- /Contact Section -->
+  </main>
+  <!-- FOOTER -->
+  <footer id="footer" class="footer light-background">
+<div class="container">
+  <div class="copyright text-center">
+    <p>
+      ©️
+      <span>Copyright</span>
+      <strong class="px-1 sitename">
+        Berta Araujo
+      </strong>
+      <span>
+        Todos os direitos reservados.<br>
+      </span>
+    </p>
+  </div>
+  <div class="social-links d-flex justify-content-center">
+    <a href="https://github.com/Berta-Araujo">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/bertaaraujo">
+      <i class="bi bi-linkedin"></i>
+    </a>
+  </div>
+</div>
+  </footer>
+  <!-- Scroll Top -->
+<i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- ENVIO PARA WHATSAPP -->
+  <script>
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function(e) {
+        e.preventDefault();
+        const nome =
+          document.getElementById("name-field").value;
+        const email =
+          document.getElementById("email-field").value;
+        const assunto =
+          document.getElementById("subject-field").value;
+        const mensagem =
+          document.getElementById("message-field").value;
+        const texto =
+`Olá, Berta!
+Meu nome é ${nome}
+E-mail: ${email}
+Assunto: ${assunto}
+Mensagem:
+${mensagem}`;
+        const numero = "5518997455145";
+        const url =
+          `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank");
+      });
+  </script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
